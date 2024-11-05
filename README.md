@@ -30,7 +30,7 @@ services:
       - meilisearch
 
   meilisearch:
-    image: getmeili/meilisearch:v0.30.0
+    image: getmeili/meilisearch:v1.11
     ports:
       - "7700:7700"
     environment:

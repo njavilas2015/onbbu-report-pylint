@@ -137,7 +137,7 @@ func main() {
 	err := godotenv.Load()
 
 	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Printf("No .env file found, proceeding without it")
 	}
 
 	initMeiliSearchClient()
