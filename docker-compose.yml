@@ -7,7 +7,7 @@ services:
     environment:
       MEILI_SEARCH_URL: "http://meilisearch:7700"  # URL del servicio de MeiliSearch
       MEILI_API_KEY: "masterKey"  # Cambia esto si tienes una clave de API
-      DROP: "false"  # Cambia a "true" si deseas eliminar el índice al iniciar
+      DROP: "true"  # Cambia a "true" si deseas eliminar el índice al iniciar
       PORT: "9999"
     depends_on:
       - meilisearch

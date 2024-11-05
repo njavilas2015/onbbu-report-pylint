@@ -42,3 +42,9 @@ volumes:
   meili_data:
 
 ```
+
+## Fix
+eliminar el volumen de datos
+
+- docker volume ls
+- docker volume rm meili_data

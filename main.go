@@ -83,7 +83,7 @@ func uploadData(data []Convention) error {
 		data[i].ID = generateID(data[i].Path, data[i].EndColumn, data[i].Column, data[i].EndLine, data[i].Line)
 	}
 
-	task, err := index.AddDocuments(data)
+	task, err := index.AddDocuments(data, "id")
 
 	if err != nil {
 		return err
